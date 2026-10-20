@@ -3,10 +3,10 @@
  * Seed Initial Data
  * 
  * Đảm bảo:
- * - Ít nhất 03 loại món ăn (ở đây có 4 loại)
- * - Ít nhất 05 món ăn (ở đây có 6 món)
+ * - Ít nhất 03 loại món ăn
+ * - Ít nhất 05 món ăn
  * - Mỗi món thuộc một loại
- * - Mỗi món có nhiều ảnh (mỗi món 2-3 ảnh)
+ * - Mỗi món có nhiều ảnh
  * - Tối đa 01 ảnh IsThumbnail = true
  * - Đầy đủ tiền tố BIT240252_ cho tất cả bảng và trường dữ liệu
  */
@@ -16,7 +16,7 @@ import { FIELDS } from '../constants/MSSV';
 export const INITIAL_CATEGORIES = [
   {
     [FIELDS.CATEGORY_ID]: 'cat_appetizers',
-    [FIELDS.CATEGORY_NAME]: 'Appetizers (Món khai vị)',
+    [FIELDS.CATEGORY_NAME]: 'Appetizers & Starters (Khai Vị)',
     [FIELDS.CATEGORY_DESCRIPTION]: 'Light, savory dishes and finger foods served before the main meal.',
   },
   {
@@ -38,6 +38,27 @@ export const INITIAL_CATEGORIES = [
 
 export const INITIAL_DISHES = [
   {
+    [FIELDS.DISH_ID]: 'dish_spring_rolls',
+    [FIELDS.DISH_NAME]: 'Fresh Spring Rolls (Gỏi Cuốn Tôm Thịt)',
+    [FIELDS.DISH_PRICE]: 45000,
+    [FIELDS.DISH_PREPARATION_TIME]: 10, // <= 15 => Quick / Nhanh (10 phút)
+    [FIELDS.DISH_IS_AVAILABLE]: true,
+    [FIELDS.DISH_DESCRIPTION]: 'Fresh Vietnamese spring rolls wrapped in delicate rice paper with succulent poached prawns, tender pork belly slices, crisp fresh lettuce, aromatic mint herbs, and vermicelli noodles, paired with traditional rich peanut hoisin dipping sauce.',
+    [FIELDS.DISH_CATEGORY_ID]: 'cat_appetizers',
+    [FIELDS.DISH_IMAGE]: [
+      {
+        [FIELDS.IMAGE_URL]: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+        [FIELDS.IS_THUMBNAIL]: true,
+      },
+      {
+        [FIELDS.IMAGE_URL]: 'https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=800&q=80',
+        [FIELDS.IS_THUMBNAIL]: false,
+      },
+    ],
+    [FIELDS.SYNC_STATUS]: 'synced',
+    [FIELDS.UPDATED_AT]: 1729000600000,
+  },
+  {
     [FIELDS.DISH_ID]: 'dish_pho_bo',
     [FIELDS.DISH_NAME]: 'Traditional Beef Pho (Phở Bò Tái Nạm)',
     [FIELDS.DISH_PRICE]: 65000,
@@ -57,27 +78,6 @@ export const INITIAL_DISHES = [
     ],
     [FIELDS.SYNC_STATUS]: 'synced',
     [FIELDS.UPDATED_AT]: 1729000000000,
-  },
-  {
-    [FIELDS.DISH_ID]: 'dish_cha_gio',
-    [FIELDS.DISH_NAME]: 'Crispy Spring Rolls (Chả Giò Tôm Thịt)',
-    [FIELDS.DISH_PRICE]: 45000,
-    [FIELDS.DISH_PREPARATION_TIME]: 12, // <= 15 => Quick
-    [FIELDS.DISH_IS_AVAILABLE]: true,
-    [FIELDS.DISH_DESCRIPTION]: 'Golden crispy rice-paper spring rolls stuffed with seasoned minced pork, prawns, wood-ear mushrooms, served with sweet-sour chili dipping sauce.',
-    [FIELDS.DISH_CATEGORY_ID]: 'cat_appetizers',
-    [FIELDS.DISH_IMAGE]: [
-      {
-        [FIELDS.IMAGE_URL]: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
-        [FIELDS.IS_THUMBNAIL]: true,
-      },
-      {
-        [FIELDS.IMAGE_URL]: 'https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=800&q=80',
-        [FIELDS.IS_THUMBNAIL]: false,
-      },
-    ],
-    [FIELDS.SYNC_STATUS]: 'synced',
-    [FIELDS.UPDATED_AT]: 1729000100000,
   },
   {
     [FIELDS.DISH_ID]: 'dish_com_tam',
@@ -147,7 +147,7 @@ export const INITIAL_DISHES = [
     [FIELDS.DISH_NAME]: 'Spicy Seafood Hotpot (Lẩu Thái Hải Sản)',
     [FIELDS.DISH_PRICE]: 240000,
     [FIELDS.DISH_PREPARATION_TIME]: 30, // > 15 => Regular
-    [FIELDS.DISH_IS_AVAILABLE]: false, // Ngừng bán -> dùng để test lọc trạng thái!
+    [FIELDS.DISH_IS_AVAILABLE]: false, // Ngừng bán
     [FIELDS.DISH_DESCRIPTION]: 'Signature Tom Yum seafood broth with jumbo river prawns, squid, clams, seasonal greens, mushrooms, and vermicelli.',
     [FIELDS.DISH_CATEGORY_ID]: 'cat_main',
     [FIELDS.DISH_IMAGE]: [

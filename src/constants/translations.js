@@ -55,7 +55,17 @@ export const TRANSLATIONS = {
     regularDish: 'Regular',
     minutes: 'mins',
     minUnit: 'min',
-    currency: 'VND',
+    currency: 'đ',
+
+    // Detail Screen specific (as in screenshot)
+    back: '< Back',
+    galleryTitle: 'Image Gallery',
+    addPhotoUrl: '+ Add image URL',
+    unitPrice: 'Unit Price',
+    prepTimeLabel: 'Preparation Time',
+    detailedDescription: 'Detailed Description',
+    thumbnailBadge: 'Thumbnail',
+    setThumbnailBtn: 'Set as thumbnail',
 
     // Form Labels & Placeholders
     dishName: 'Dish Name',
@@ -96,7 +106,6 @@ export const TRANSLATIONS = {
     cancel: 'Cancel',
     delete: 'Delete',
     edit: 'Edit',
-    back: 'Back to List',
     addNewDish: 'Add Dish',
     manageCategories: 'Manage Categories',
     quickFillSample: 'Fill Sample Images',
@@ -135,7 +144,7 @@ export const TRANSLATIONS = {
 
     // Navigation & Screen Titles
     dishList: 'Danh Sách Món Ăn',
-    dishDetail: 'Chi Tiết Món Ăn',
+    dishDetail: 'Chi tiết món ăn',
     createDish: 'Thêm Món Ăn Mới',
     editDish: 'Chỉnh Sửa Món Ăn',
     categoryManager: 'Loại Món Ăn',
@@ -179,6 +188,16 @@ export const TRANSLATIONS = {
     minUnit: 'phút',
     currency: 'đ',
 
+    // Detail Screen specific (as in screenshot)
+    back: '< Quay lại',
+    galleryTitle: 'Bộ sưu tập hình ảnh',
+    addPhotoUrl: '+ Thêm URL ảnh',
+    unitPrice: 'Đơn giá',
+    prepTimeLabel: 'Thời gian chế biến',
+    detailedDescription: 'Mô tả chi tiết',
+    thumbnailBadge: 'Ảnh đại diện',
+    setThumbnailBtn: 'Đặt làm ảnh đại diện',
+
     // Form Labels & Placeholders
     dishName: 'Tên Món Ăn',
     dishNamePlaceholder: 'VD: Phở Bò Truyền Thống',
@@ -216,9 +235,8 @@ export const TRANSLATIONS = {
     saving: 'Đang lưu...',
     update: 'Cập Nhật Món Ăn',
     cancel: 'Hủy bỏ',
-    delete: 'Xóa món',
+    delete: 'Xóa',
     edit: 'Chỉnh sửa',
-    back: 'Quay lại danh sách',
     addNewDish: 'Thêm Món',
     manageCategories: 'Quản Lý Loại',
     quickFillSample: 'Gợi ý ảnh mẫu',
