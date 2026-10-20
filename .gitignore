@@ -39,3 +39,8 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Media files (> 100MB exceeds GitHub push limits)
+*.mp4
+*.mov
+*.avi
