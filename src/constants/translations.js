@@ -1,0 +1,251 @@
+/**
+ * BIT240252_FoodManager
+ * Multi-language Localization Dictionary (English - Vietnamese)
+ * Default language: English ('en')
+ */
+
+export const TRANSLATIONS = {
+  en: {
+    // App Header & Info
+    appName: 'Food Manager',
+    studentId: 'Student ID',
+    projectTitle: 'BIT240252 - Food Manager',
+
+    // Navigation & Screen Titles
+    dishList: 'Dishes Management',
+    dishDetail: 'Dish Details',
+    createDish: 'Add New Dish',
+    editDish: 'Edit Dish',
+    categoryManager: 'Categories',
+    networkStatus: 'Network',
+    online: 'Online',
+    offline: 'Offline',
+    syncing: 'Syncing...',
+    synced: 'All changes synced',
+    pendingSync: 'unsynced change(s)',
+    simulateOffline: 'Simulate Offline',
+
+    // List & Filter
+    searchPlaceholder: 'Search dishes by name...',
+    allCategories: 'All Categories',
+    filterByStatus: 'Status Filter',
+    statusAll: 'All Statuses',
+    statusAvailableOnly: 'Available Only',
+    statusUnavailableOnly: 'Unavailable Only',
+    priceRange: 'Price Range',
+    minPrice: 'Min Price',
+    maxPrice: 'Max Price',
+    applyFilter: 'Apply',
+    resetFilter: 'Reset Filters',
+    filters: 'Filters',
+    activeFilters: 'Active filters',
+    sortBy: 'Sort By',
+    sortDefault: 'Default (Latest)',
+    sortPriceAsc: 'Price: Low to High',
+    sortPriceDesc: 'Price: High to Low',
+    sortPrepTimeAsc: 'Prep Time: Shortest first',
+    totalDishes: 'Total dishes',
+    noDishesFound: 'No dishes match your filter criteria.',
+    emptyListHint: 'Try adjusting search terms or add a new dish.',
+
+    // Badges & Status
+    statusAvailable: 'Available',
+    statusUnavailable: 'Unavailable',
+    quickDish: 'Quick',
+    regularDish: 'Regular',
+    minutes: 'mins',
+    minUnit: 'min',
+    currency: 'VND',
+
+    // Form Labels & Placeholders
+    dishName: 'Dish Name',
+    dishNamePlaceholder: 'e.g., Traditional Beef Pho',
+    category: 'Category',
+    selectCategory: '-- Select a Category --',
+    price: 'Price (VND)',
+    pricePlaceholder: 'e.g., 65000',
+    prepTime: 'Preparation Time (minutes)',
+    prepTimePlaceholder: 'e.g., 15 (<= 15 is Quick)',
+    availability: 'Selling Status',
+    isAvailableLabel: 'Mark as currently available for sale',
+    description: 'Description',
+    descriptionPlaceholder: 'Enter appetizing dish description, ingredients, notes...',
+    imageSection: 'Dish Images',
+    addImageUrl: 'Add Image via URL',
+    imageUrlPlaceholder: 'https://images.unsplash.com/...',
+    addImageBtn: 'Add Image',
+    makeThumbnail: 'Set as Thumbnail',
+    isThumbnailBadge: 'Thumbnail',
+    noImagesYet: 'No images added yet. Please add at least one image URL.',
+    imagePreview: 'Image Preview',
+
+    // Validation Messages
+    valNameRequired: 'Dish name cannot be empty.',
+    valPriceInvalid: 'Price must be greater than 0.',
+    valPrepTimeInvalid: 'Preparation time must be greater than 0 minutes.',
+    valCategoryRequired: 'Please select a valid category.',
+    valDuplicateName: 'A dish with this name already exists in this category.',
+    valMinMaxPriceInvalid: 'Min price cannot exceed Max price.',
+    valImageUrlRequired: 'Please enter a valid image URL.',
+    valImageDuplicate: 'This image URL is already in the list.',
+
+    // Buttons & Actions
+    save: 'Save Dish',
+    saving: 'Saving...',
+    update: 'Update Dish',
+    cancel: 'Cancel',
+    delete: 'Delete',
+    edit: 'Edit',
+    back: 'Back to List',
+    addNewDish: 'Add Dish',
+    manageCategories: 'Manage Categories',
+    quickFillSample: 'Fill Sample Images',
+
+    // Confirmations & Alerts
+    confirmDeleteTitle: 'Confirm Delete',
+    confirmDeleteDishMsg: 'Are you sure you want to delete this dish? This action cannot be undone.',
+    cannotDeleteCategoryTitle: 'Cannot Delete Category',
+    cannotDeleteCategoryMsg: 'This category is currently assigned to one or more dishes. You cannot delete it until all dishes are reassigned or deleted.',
+    dishNotFound: 'Dish not found or has been deleted.',
+    deleteSuccess: 'Dish deleted successfully.',
+    saveSuccess: 'Dish saved successfully.',
+    errorOccurred: 'An error occurred. Please try again.',
+
+    // Category Management Screen
+    categoryListTitle: 'Category List',
+    addCategory: 'Add Category',
+    categoryName: 'Category Name',
+    categoryNamePlaceholder: 'e.g., Appetizers',
+    categoryDesc: 'Description',
+    categoryDescPlaceholder: 'Brief category description...',
+    categoryDishCount: 'Associated dishes',
+    deleteCategoryConfirm: 'Delete Category',
+    deleteCategoryMsg: 'Are you sure you want to delete category',
+
+    // Offline / Sync Explanations
+    offlineNotice: 'Offline Mode: Changes will be stored locally and synced when connection resumes.',
+    onlineNotice: 'Online: Automatic sync with remote storage active.',
+  },
+
+  vi: {
+    // App Header & Info
+    appName: 'Quản Lý Món Ăn',
+    studentId: 'MSSV',
+    projectTitle: 'BIT240252 - Quản Lý Món Ăn',
+
+    // Navigation & Screen Titles
+    dishList: 'Danh Sách Món Ăn',
+    dishDetail: 'Chi Tiết Món Ăn',
+    createDish: 'Thêm Món Ăn Mới',
+    editDish: 'Chỉnh Sửa Món Ăn',
+    categoryManager: 'Loại Món Ăn',
+    networkStatus: 'Mạng',
+    online: 'Trực tuyến',
+    offline: 'Ngoại tuyến',
+    syncing: 'Đang đồng bộ...',
+    synced: 'Đã đồng bộ toàn bộ',
+    pendingSync: 'thay đổi chờ đồng bộ',
+    simulateOffline: 'Giả lập Ngoại tuyến',
+
+    // List & Filter
+    searchPlaceholder: 'Tìm món ăn theo tên...',
+    allCategories: 'Tất cả loại món',
+    filterByStatus: 'Lọc trạng thái',
+    statusAll: 'Tất cả trạng thái',
+    statusAvailableOnly: 'Đang bán',
+    statusUnavailableOnly: 'Ngừng bán',
+    priceRange: 'Khoảng giá',
+    minPrice: 'Giá từ',
+    maxPrice: 'Giá đến',
+    applyFilter: 'Áp dụng',
+    resetFilter: 'Đặt lại bộ lọc',
+    filters: 'Bộ lọc & Tìm kiếm',
+    activeFilters: 'Đang áp dụng lọc',
+    sortBy: 'Sắp xếp theo',
+    sortDefault: 'Mặc định (Mới nhất)',
+    sortPriceAsc: 'Giá: Thấp đến Cao',
+    sortPriceDesc: 'Giá: Cao đến Thấp',
+    sortPrepTimeAsc: 'Thời gian chế biến: Tăng dần',
+    totalDishes: 'Tổng số món',
+    noDishesFound: 'Không tìm thấy món ăn nào phù hợp với bộ lọc.',
+    emptyListHint: 'Hãy thử điều chỉnh từ khóa tìm kiếm hoặc thêm món ăn mới.',
+
+    // Badges & Status
+    statusAvailable: 'Đang bán',
+    statusUnavailable: 'Ngừng bán',
+    quickDish: 'Nhanh',
+    regularDish: 'Thông thường',
+    minutes: 'phút',
+    minUnit: 'phút',
+    currency: 'đ',
+
+    // Form Labels & Placeholders
+    dishName: 'Tên Món Ăn',
+    dishNamePlaceholder: 'VD: Phở Bò Truyền Thống',
+    category: 'Loại Món Ăn',
+    selectCategory: '-- Chọn loại món ăn --',
+    price: 'Giá bán (VNĐ)',
+    pricePlaceholder: 'VD: 65000',
+    prepTime: 'Thời gian chế biến (phút)',
+    prepTimePlaceholder: 'VD: 15 (≤ 15 phút là Nhanh)',
+    availability: 'Trạng Thái Bán Hàng',
+    isAvailableLabel: 'Đang phục vụ / Đang bán',
+    description: 'Mô Tả Chi Tiết',
+    descriptionPlaceholder: 'Nhập mô tả hương vị, nguyên liệu, cách dùng...',
+    imageSection: 'Danh Sách Hình Ảnh',
+    addImageUrl: 'Thêm ảnh qua URL',
+    imageUrlPlaceholder: 'https://images.unsplash.com/...',
+    addImageBtn: 'Thêm ảnh',
+    makeThumbnail: 'Đặt làm ảnh đại diện',
+    isThumbnailBadge: 'Ảnh đại diện',
+    noImagesYet: 'Chưa có ảnh nào. Vui lòng thêm ít nhất 01 URL hình ảnh.',
+    imagePreview: 'Xem trước ảnh',
+
+    // Validation Messages
+    valNameRequired: 'Tên món ăn không được để trống.',
+    valPriceInvalid: 'Giá bán phải lớn hơn 0.',
+    valPrepTimeInvalid: 'Thời gian chế biến phải lớn hơn 0 phút.',
+    valCategoryRequired: 'Vui lòng chọn loại món ăn hợp lệ.',
+    valDuplicateName: 'Tên món đã tồn tại trong cùng loại món ăn này.',
+    valMinMaxPriceInvalid: 'Giá tối thiểu không được lớn hơn giá tối đa.',
+    valImageUrlRequired: 'Vui lòng nhập đường dẫn URL hình ảnh.',
+    valImageDuplicate: 'URL hình ảnh này đã có trong danh sách.',
+
+    // Buttons & Actions
+    save: 'Lưu Món Ăn',
+    saving: 'Đang lưu...',
+    update: 'Cập Nhật Món Ăn',
+    cancel: 'Hủy bỏ',
+    delete: 'Xóa món',
+    edit: 'Chỉnh sửa',
+    back: 'Quay lại danh sách',
+    addNewDish: 'Thêm Món',
+    manageCategories: 'Quản Lý Loại',
+    quickFillSample: 'Gợi ý ảnh mẫu',
+
+    // Confirmations & Alerts
+    confirmDeleteTitle: 'Xác Nhận Xóa',
+    confirmDeleteDishMsg: 'Bạn có chắc chắn muốn xóa món ăn này? Thao tác này không thể hoàn tác.',
+    cannotDeleteCategoryTitle: 'Không Thể Xóa Loại Món',
+    cannotDeleteCategoryMsg: 'Loại món này đang được sử dụng bởi một hoặc nhiều món ăn. Bạn không thể xóa khi vẫn còn món thuộc loại này.',
+    dishNotFound: 'Không tìm thấy món ăn hoặc món đã bị xóa.',
+    deleteSuccess: 'Xóa món ăn thành công.',
+    saveSuccess: 'Lưu món ăn thành công.',
+    errorOccurred: 'Có lỗi xảy ra. Vui lòng thử lại.',
+
+    // Category Management Screen
+    categoryListTitle: 'Danh Sách Loại Món Ăn',
+    addCategory: 'Thêm Loại Món',
+    categoryName: 'Tên Loại Món',
+    categoryNamePlaceholder: 'VD: Khai Vị',
+    categoryDesc: 'Mô Tả Loại Món',
+    categoryDescPlaceholder: 'Mô tả ngắn gọn về loại món...',
+    categoryDishCount: 'Số món thuộc loại',
+    deleteCategoryConfirm: 'Xóa Loại Món',
+    deleteCategoryMsg: 'Bạn có chắc chắn muốn xóa loại món',
+
+    // Offline / Sync Explanations
+    offlineNotice: 'Chế độ ngoại tuyến: Dữ liệu được lưu trữ local và sẽ tự động đồng bộ khi có Internet.',
+    onlineNotice: 'Trực tuyến: Tự động đồng bộ với MockAPI / Cloud đang kích hoạt.',
+  },
+};
