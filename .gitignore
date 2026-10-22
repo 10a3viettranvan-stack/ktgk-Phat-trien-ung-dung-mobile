@@ -40,7 +40,4 @@ yarn-error.*
 /ios
 /android
 
-# Media files (> 100MB exceeds GitHub push limits)
-*.mp4
-*.mov
-*.avi
+# Media files are tracked via Git LFS (.gitattributes)
